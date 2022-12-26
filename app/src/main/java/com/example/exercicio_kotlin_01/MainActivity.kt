@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         viewBinding()
     }
 
-    private fun view () {
+    private fun viewBinding () {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             if (currentItemIndex >= list.size) {
                 currentItemIndex = 0
             }
-            binding.textView.text = list(currentItemIndex)
+            binding.textView.text = list [currentItemIndex]
             currentItemIndex++
         }
 
